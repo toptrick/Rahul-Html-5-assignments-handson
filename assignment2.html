@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wipro Assessment</title>
+    <style>
+        body{
+         margin:1cm;
+         border:2px solid black;
+	     padding:1cm;
+	     border-radius:20px;
+		 width:30%;
+        }
+        input{
+            text-transform:uppercase;
+        }
+        table{
+            width:30%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+<div><img src="https://images.financialexpress.com/2017/05/wipro.jpg" width="200px" height="200px" name="img"></a></div><br/>
+    <div>
+        <form name="register" onsubmit="">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" min="18" name="age" required></td> 
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td>
+                        <input list="city" id="choice" name="choice" required />
+                        <datalist id="city">
+                            <option value="Bangalore">
+                            <option value="Rajkot">
+                            <option value="Vijag">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr style="height: 12px;"></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
